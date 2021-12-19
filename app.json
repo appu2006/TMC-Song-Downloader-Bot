@@ -1,0 +1,51 @@
+{
+    "name": "Song-Downloader-Bot",
+    "description": "A BOT TO DOWNLOAD MUSIC FROM YOUTUBE.",
+    "logo": "https://telegra.ph/file/745badebb188c6da28a67.jpg",
+    "stack": "container",
+    "keywords": [
+        "song",
+        "youtube",
+        "Telegram",
+        "nazriya"
+    ],
+    "website": "https://github.com/MR-JINN-OF-TG",
+    "repository": "https://github.com/MR-JINN-OF-TG/Song-Downloader-Bot",
+    "success_url": "https://t.me/NAZRIYASUPPORT",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Your API ID from my.telegram.org",
+            "value": ""
+        }, 
+        "OWNER_ID": {
+            "description": "Your id for broadcasting messages to users. Only you can broadcast message.",
+            "value": ""
+        },
+        "DB_URI": {
+            "description": "Your database url from mongodb.",
+            "value": ""
+        }, 
+        "SUPPORT": {
+            "description": "Your support chat Username Without @",
+            "value": "NAZRIYASUPPORT"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+        }
+      ]
+   }
+    
